@@ -10,11 +10,11 @@ The U-Net Architecture brings out the best of both worlds. It is a combination o
 
 ### U-Net Architecture Results
 The IoU score plots of the U-Net architecture is shown below.
-![U-Net Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetIoU.png?raw=true')
+![U-Net Architecture Results](https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetIoU.png)
 The loss plots of the U-Net architecture is shown below.
-![U-Net Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetLoss.png?raw=true')
+![U-Net Architecture Results](https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetLoss.png)
 The predictions of the U-Net architecture in identifying the road netowkr of one such ariel image is shown below.
-![U-Net Architecture Predictions]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetPred.png?raw=true')
+![U-Net Architecture Predictions](https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetpred.png)
 
 ## Approach 2: DeepLabV3+
 ### DeepLabV3+ Architecture
@@ -24,11 +24,11 @@ The DeepLabV3+ Architecture is an extension of the DeepLabV3 Architecture. The D
 
 ### DeepLabV3+ Architecture Results
 The IoU score plots of the DeepLabV3+ architecture is shown below.
-![DeepLabV3+ Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3IoU.png?raw=true')
+![DeepLabV3+ Architecture Results](https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3IoU.png)
 The loss plots of the DeepLabV3+ architecture is shown below.
-![DeepLabV3+ Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3Dice.png?raw=true')
+![DeepLabV3+ Architecture Results](https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3Dice.png)
 The predictions of the DeepLabV3+ architecture in identifying the road netowkr of one such ariel image is shown below.
-![DeepLabV3+ Architecture Predictions]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3pred.png?raw=true')
+![DeepLabV3+ Architecture Predictions](https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3pred.png)
 
 
 # Conclusion
