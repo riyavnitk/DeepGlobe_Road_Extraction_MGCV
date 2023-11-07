@@ -1,7 +1,6 @@
 # Road Extraction using Image Segmentation and Deep Learning
 ## Introduction
 We have used the DeepGlobe dataset for training our model. The dataset contains 803 images of size 2448x2448. We have used 600 images for training and 203 images for testing. The dataset contains 6 classes namely road, building, trees, crops, water and background. We have used only the road class for training our model. The dataset is available at https://competitions.codalab.org/competitions/18467#participate-get_starting_kit.
- The dataset contains the images and the corresponding masks. The masks are of the same size as the images and contain the pixel-wise class labels. The dataset also contains the corresponding geojson files which contain the coordinates of the road pixels. We have used the geojson files to generate the road masks. The geojson files are converted to road masks using the script geojson_to_mask.py. The script takes the geojson file and the corresponding image as input and generates the road mask. The script is available in the folder geojson_to_mask. The script generates the road mask of the same size as the image. The road mask contains the road pixels as 1 and the background pixels as 0. The road mask is then converted to a binary mask using the script binary_mask.py. The script takes the road mask as input and generates the binary mask. The script is available in the folder binary_mask. The binary mask contains the road pixels as 1 and the background pixels as 255. The binary mask is then converted to a 3 channel mask using the script binary_mask_to_3_channel_mask.py. The script takes the binary mask as input and generates the 3 channel mask. The script is available in the folder binary_mask_to_3_channel_mask. The 3 channel mask contains the road pixels as [0, 0, 255] and the background pixels as [255, 255, 255]. The 3 channel mask is then converted to a 2 channel mask using the script 3_channel_mask_to_2_channel_mask.py. The script takes the 3 channel mask as input and generates the 2 channel mask. The script is available in the folder 3_channel_mask_to_2_channel_mask. The 2 channel mask contains the road pixels as [0, 255] and the background pixels as [255, 255]. The 2 channel mask is then converted to a 1 channel mask using the script 2_channel_mask_to_1_channel_mask.py.
 
 ## Approach 1: U-Net
 ### U-Net Architecture
@@ -11,11 +10,11 @@ The U-Net Architecture brings out the best of both worlds. It is a combination o
 
 ### U-Net Architecture Results
 The IoU score plots of the U-Net architecture is shown below.
-![U-Net Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetIoU.png')
+![U-Net Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetIoU.png?raw=true')
 The loss plots of the U-Net architecture is shown below.
-![U-Net Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetLoss.png')
+![U-Net Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetLoss.png?raw=true')
 The predictions of the U-Net architecture in identifying the road netowkr of one such ariel image is shown below.
-![U-Net Architecture Predictions]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetPred.png')
+![U-Net Architecture Predictions]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/UNetPred.png?raw=true')
 
 ## Approach 2: DeepLabV3+
 ### DeepLabV3+ Architecture
@@ -25,11 +24,11 @@ The DeepLabV3+ Architecture is an extension of the DeepLabV3 Architecture. The D
 
 ### DeepLabV3+ Architecture Results
 The IoU score plots of the DeepLabV3+ architecture is shown below.
-![DeepLabV3+ Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3IoU.png')
+![DeepLabV3+ Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3IoU.png?raw=true')
 The loss plots of the DeepLabV3+ architecture is shown below.
-![DeepLabV3+ Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3Dice.png')
+![DeepLabV3+ Architecture Results]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3Dice.png?raw=true')
 The predictions of the DeepLabV3+ architecture in identifying the road netowkr of one such ariel image is shown below.
-![DeepLabV3+ Architecture Predictions]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3pred.png')
+![DeepLabV3+ Architecture Predictions]('https://github.com/riyavnitk/DeepGlobe_Road_Extraction_MGCV/blob/master/images/DLV3pred.png?raw=true')
 
 
 # Conclusion
